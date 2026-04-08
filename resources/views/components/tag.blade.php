@@ -1,1 +1,1 @@
-<a href="#" class="bg-primary/20 hover:bg-primary/35 px-2 py-1 rounded-xl text-xs">{{ $slot}}</a>
+<a href="#" class="bg-primary/20 hover:bg-primary/35 px-3 py-1 rounded-xl text-xs">{{ $slot}}</a>
