@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 
-<body class="bg-primary">
+<body>
     <div class="px-10">
         <nav class="flex justify-between items-center py-4 border-b border-black/10">
             <div>
@@ -29,7 +29,7 @@
             </div>
         </nav>
 
-        <main class="mt-10 max-w-[986px]">
+        <main class="mt-10 max-w-[986px] mx-auto">
             {{ $slot }}
         </main>
     </div>

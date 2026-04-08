@@ -1,24 +1,31 @@
 <x-layout>
-    <section>
-        <h3 class="mb-6">Top Jobs</h3>
-
-        <div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-            <div class="self-start text-sm">Employerr</div>
-
-            <div class="py-8 font-bold">
-                <h3>Job Title</h3>
-                <p>Description - Salary</p>
+    <div class="space-y-10">
+        <section>
+            <x-section-heading>Featured Jobs</x-section-heading>
+            <div class="grid lg:grid-cols-3 gap-8 mt-6">
+                <x-job-card></x-job-card>
+                <x-job-card></x-job-card>
+                <x-job-card></x-job-card>
             </div>
+        </section>
 
-            <div class="flex justify-between items-center mt-auto">
-                <div>
-                    <a href="#" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl">Tag</a>
-                    <a href="#">Tag</a>
-                    <a href="#">Tag</a>
-                </div>
 
-                <img src="http://placehold.it/42/42" alt="">
+        <section>
+            <x-section-heading>Recent Jobs</x-section-heading>
+        </section>
+
+
+        <section>
+            <x-section-heading>Tag</x-section-heading>
+            <div class="mt-6 space-x-1">
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </div>
 </x-layout>
