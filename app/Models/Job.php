@@ -14,4 +14,13 @@ class Job extends Model
     {
         return $this->belongsTo(Employer::class);
     }
+
+    public function tag()
+    {
+        return null;
+    }
+    public function tags()
+    {
+        return [];
+    }
 }
