@@ -4,7 +4,7 @@
             <h1 class="font-bold text-4xl">Lets find your next job</h1>
 
             <form action='' class="mt-6">
-                <input type="text" placeholder="Web Developer..." class="rounded-xl bg-black/5 border-black/10 px-5 py-4 w-full max-w-xl" />
+                <input type="text" placeholder="What are you interested in..." class="rounded-xl bg-black/5 border-black/10 px-5 py-4 w-full max-w-xl" />
             </form>
         </section>
 
@@ -16,9 +16,6 @@
                 @endforeach
             </div>
         </section>
-
-
-
 
         <section>
             <x-section-heading>Tag</x-section-heading>
