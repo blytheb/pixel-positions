@@ -1,13 +1,8 @@
-@props(['label', 'name'])
-
-<div>
-    @if ($label)
-        <x-forms.label :$name :$label />
+<form {{ $attributes(["class" => "max-w-2xl mx-auto space-y-6", "method" => "GET"]) }}>
+    @if ($attributes->get('method', 'GET') !== 'GET')
+        @csrf
+        @method($attributes->get('method'))
     @endif
 
-    <div class="mt-1">
-        {{ $slot }}
-
-        <x-forms.error :error="$errors->first($name)" />
-    </div>
-</div>
+    {{ $slot }}
+</form>
