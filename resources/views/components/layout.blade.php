@@ -29,7 +29,7 @@
         @auth
             <div class='space-x-6'>
                 <a href="/jobs/create">Post a Job</a>
-                <a href="#">Log Out</a>
+                <a href="/logout">Log Out</a>
 
             </div>
         @endauth

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rules\File;
 use Illuminate\Validation\Rules\Password;
 
-class RegisterUserController extends Controller
+class RegisteredUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,7 +46,7 @@ class RegisterUserController extends Controller
         $logoPath = $request->logo->store('logos');
 
         $user->employer()->create([
-            'name' => $employerAttributes['employer'],
+            'employer' => $employerAttributes['employer'],
             'logo' => $logoPath,
         ]);
 
